@@ -1,0 +1,30 @@
+
+=== FULL vs COMPLETE vs PERFECT binary trees ===
+  Full     : every node has 0 or 2 children.
+  Complete : all levels full except maybe the last, which fills from the left.
+  Perfect  : full AND every leaf on the same level (2^(h+1)-1 nodes).
+
+  Example A (7 nodes, balanced pyramid)
+     nodes = 7, leaves = 4, height = 2
+     Full: YES   Complete: YES   Perfect: YES
+  Example B (6 nodes, last level half filled)
+     nodes = 6, leaves = 3, height = 2
+     Full: no   Complete: YES   Perfect: no
+  Example C (5 nodes, one leaf early)
+     nodes = 5, leaves = 3, height = 2
+     Full: YES   Complete: no   Perfect: no
+  Example D (4 nodes, a straight chain)
+     nodes = 4, leaves = 1, height = 3
+     Full: no   Complete: no   Perfect: no
+
+  THE INVESTIGATION TREE (Diwali Night at Sharma Haveli)
+  Case tree loaded from the dataset
+     nodes = 15, leaves = 8, height = 3
+     Full: YES   Complete: YES   Perfect: YES
+     A perfect tree of height 3 must have 2^4 - 1 = 15 nodes; ours has 15.
+
+  What this means for the investigation:
+   - FULL    : each piece of evidence gives exactly two leads; only final findings are dead ends.
+   - COMPLETE: the case file has no holes - every level is filled from the left.
+   - PERFECT : every trail is equally deep (3 leads from the crime scene to any finding),
+               so no lead is easier or harder to reach than another.

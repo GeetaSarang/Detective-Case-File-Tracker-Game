@@ -1,0 +1,45 @@
+
+=== BINARY TREE ANALYSIS OF THE CASE: Diwali Night at Sharma Haveli ===
+  Total evidence nodes : 15
+  Leaf nodes           : 8
+  Internal nodes       : 7
+  Height               : 3  (levels = height + 1 = 4)
+
+  Traversals (evidence ids):
+  Preorder   (Root,Left,Right): 1 2 4 8 9 5 10 11 3 6 12 13 7 14 15
+  Inorder    (Left,Root,Right): 8 4 9 2 10 5 11 1 12 6 13 3 14 7 15
+  Postorder  (Left,Right,Root): 8 9 4 10 11 5 2 12 13 6 14 15 7 3 1
+  Level-order (by level)      : 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+
+  Level-order with titles:
+    #1 [Scene] Crime Scene: The Study
+    #2 [Physical] The Milk Glass
+    #3 [Testimony] What the Family Says
+    #4 [Forensic] Lab Report
+    #5 [Physical] The Milk Pan
+    #6 [Testimony] Rashi's Statement
+    #7 [Digital] Gate Register
+    #8 [Document] Medicine Cabinet
+    #9 [Document] Medical Shop Bill
+    #10 [Physical] Napkin in the Dustbin
+    #11 [Surveillance] Kitchen Camera
+    #12 [Digital] Neeti's Video Call
+    #13 [Surveillance] Corridor Camera
+    #14 [Digital] Advaith's Phone
+    #15 [Surveillance] Temple Camera
+
+  Search / evidence retrieval:
+    findById(9) -> Medical Shop Bill [Document]
+    findById(15) -> Temple Camera [Surveillance]
+    findById(42) -> not found
+
+  Properties:
+    isFull    = YES
+    isComplete= YES
+    isPerfect = YES
+
+  Suspect BST (ordered by unique id - a real use of a Binary SEARCH Tree):
+    Inorder (sorted by id): 1, 2, 3, 4, 5
+    BST height: 2
+    searchSuspect(4) -> Abhinav Malhotra
+    searchSuspect(9) -> not found

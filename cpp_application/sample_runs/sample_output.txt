@@ -1,0 +1,474 @@
+
+========================================================
+   DETECTIVE MYSTERY GAME USING BINARY TREES
+   Case loaded: Diwali Night at Sharma Haveli
+========================================================
+  1) Play the mystery
+  2) Guided experiment (you play, the game records your time)
+  3) Automated lead-completeness experiment (computer detective)
+  4) Scaling experiment (same test on much bigger trees)
+  5) Binary tree analysis: traversals, counts, height, search
+  6) Full / Complete / Perfect binary tree demo
+  7) Quit
+  Choice: 
+------------------------------------------------------------------------
+   Diwali Night at Sharma Haveli
+------------------------------------------------------------------------
+  It is Diwali night in Jaipur. Sharma Haveli is full of lights, sweets
+  and loud firecrackers. At 9:15 PM the power goes off for ten long
+  minutes. At 10:30 PM the family finds Adithya Sharma, 62, the owner of
+  Sharma Jewellers, sitting very still at his study desk. A glass of
+  milk is next to him. His iron safe is open and his red account book is
+  gone. Nobody screamed. Nobody saw anything. Five people were inside
+  the haveli tonight, and one of them is lying. The police will not make
+  an arrest until you have followed every lead in the file. The night is
+  almost over. Who did it?
+
+  THE SUSPECTS
+  [1] Geeta Sharma - Wife
+      She will get the haveli and the shop. People say she and Adithya
+      had a loud fight last week.
+  [2] Rashi Yadav - Family cook
+      She has worked in the haveli for thirty years. She made the milk
+      and carried it to the study.
+  [3] Advaith Sharma - Son
+      He wants to start his own business, but his father refused to give
+      him money. They had an angry argument at dinner.
+  [4] Abhinav Malhotra - Shop manager
+      He runs Sharma Jewellers every day and knows the shop's money
+      better than anyone. He visited the haveli tonight.
+  [5] Neeti Nair - Niece
+      She is a college student who lives in the haveli. She says she
+      found the body, but she took a long time to call for help.
+
+  Every piece of evidence branches into TWO leads (L and R). Explore every lead,
+  then accuse. Accusations before 100% of the leads are explored are refused.
+
+  COMMANDS
+    L  follow the LEFT lead          R  follow the RIGHT lead
+    B  go back to previous evidence  N  open your notebook (all evidence so far)
+    T  show the investigation tree   A  accuse a suspect (only after 100% explored)
+    H  show this help                Q  quit this investigation
+
+  The clock starts now.
+------------------------------------------------------------------------
+ EVIDENCE #1  [Scene]  Crime Scene: The Study   ** NEW **
+------------------------------------------------------------------------
+  The study is dark and smells of burnt diyas. Adithya Sharma sits at
+  his desk and does not move. A glass of milk stands next to him. The
+  iron safe is open and the red account book is missing. Outside,
+  firecrackers keep banging, so nobody heard anything. Where will you
+  look first?
+
+  Case progress [#-------------------] 1/15 leads (6.7%)   Steps: 0
+
+  Leads from here:
+    [L] #2 The Milk Glass (Physical) - UNEXPLORED
+    [R] #3 What the Family Says (Testimony) - UNEXPLORED
+
+  Command [L/R/B/N/T/A/H/Q] > 
+  *** ACCUSATION REFUSED ***
+  The Chief Inspector will not sign a warrant. 14 of 15 leads are still
+  unexplored (case completeness 6%). Finish every lead before accusing
+  anyone.
+  Open leads you can still follow:
+    - #2 The Milk Glass  (reached from #1 Crime Scene: The Study)
+    - #3 What the Family Says  (reached from #1 Crime Scene: The Study)
+
+  Case progress [#-------------------] 1/15 leads (6.7%)   Steps: 0
+
+  Leads from here:
+    [L] #2 The Milk Glass (Physical) - UNEXPLORED
+    [R] #3 What the Family Says (Testimony) - UNEXPLORED
+
+  Command [L/R/B/N/T/A/H/Q] > ------------------------------------------------------------------------
+ EVIDENCE #2  [Physical]  The Milk Glass   ** NEW **
+------------------------------------------------------------------------
+  The glass is half empty. At the bottom there is a thin layer of white
+  powder, and the milk smells a little bitter. Someone put something in
+  it. But when, and who?
+
+  Case progress [##------------------] 2/15 leads (13.3%)   Steps: 1
+
+  Leads from here:
+    [L] #4 Lab Report (Forensic) - UNEXPLORED
+    [R] #5 The Milk Pan (Physical) - UNEXPLORED
+
+  Command [L/R/B/N/T/A/H/Q] > ------------------------------------------------------------------------
+ EVIDENCE #4  [Forensic]  Lab Report   ** NEW **
+------------------------------------------------------------------------
+  The white powder is crushed sleeping medicine. The amount was enough
+  to stop an old man's heart. This was not an accident. Where did the
+  tablets come from?
+
+  Case progress [####----------------] 3/15 leads (20.0%)   Steps: 2
+
+  Leads from here:
+    [L] #8 Medicine Cabinet (Document) - UNEXPLORED
+    [R] #9 Medical Shop Bill (Document) - UNEXPLORED
+
+  Command [L/R/B/N/T/A/H/Q] > ------------------------------------------------------------------------
+ EVIDENCE #8  [Document]  Medicine Cabinet   ** NEW **
+------------------------------------------------------------------------
+  Adithya's own sleeping tablets are all still in the strip. The cabinet
+  was locked and the key was in his pocket. The poison did not come from
+  this house. Someone brought the tablets from outside.
+
+  Case progress [#####---------------] 4/15 leads (26.7%)   Steps: 3
+
+  Leads from here:
+    This trail ends here: this is a final finding with no further leads.
+    Use [B] to go back and try another lead.
+
+  Command [L/R/B/N/T/A/H/Q] > 
+  You return to evidence #4: Lab Report
+
+  Case progress [#####---------------] 4/15 leads (26.7%)   Steps: 4
+
+  Leads from here:
+    [L] #8 Medicine Cabinet (Document) - explored
+    [R] #9 Medical Shop Bill (Document) - UNEXPLORED
+
+  Command [L/R/B/N/T/A/H/Q] > ------------------------------------------------------------------------
+ EVIDENCE #9  [Document]  Medical Shop Bill   ** NEW **
+------------------------------------------------------------------------
+  A small medical shop near the market says a man bought ten strong
+  sleeping tablets last Monday without a doctor's slip. The shop owner
+  remembers his gold watch. It had the words "10 Years of Service -
+  Sharma Jewellers" on it. He paid in cash.
+
+  Case progress [######--------------] 5/15 leads (33.3%)   Steps: 5
+
+  Leads from here:
+    This trail ends here: this is a final finding with no further leads.
+    Use [B] to go back and try another lead.
+
+  Command [L/R/B/N/T/A/H/Q] > 
+  You return to evidence #4: Lab Report
+
+  Case progress [######--------------] 5/15 leads (33.3%)   Steps: 6
+
+  Leads from here:
+    [L] #8 Medicine Cabinet (Document) - explored
+    [R] #9 Medical Shop Bill (Document) - explored
+
+  Command [L/R/B/N/T/A/H/Q] > 
+  You return to evidence #2: The Milk Glass
+
+  Case progress [######--------------] 5/15 leads (33.3%)   Steps: 7
+
+  Leads from here:
+    [L] #4 Lab Report (Forensic) - explored
+    [R] #5 The Milk Pan (Physical) - UNEXPLORED
+
+  Command [L/R/B/N/T/A/H/Q] > ------------------------------------------------------------------------
+ EVIDENCE #5  [Physical]  The Milk Pan   ** NEW **
+------------------------------------------------------------------------
+  The milk left in the kitchen pan is clean. So the poison was added
+  after the milk left the kitchen. Someone touched that glass on the
+  way, or inside the study.
+
+  Case progress [########------------] 6/15 leads (40.0%)   Steps: 8
+
+  Leads from here:
+    [L] #10 Napkin in the Dustbin (Physical) - UNEXPLORED
+    [R] #11 Kitchen Camera (Surveillance) - UNEXPLORED
+
+  Command [L/R/B/N/T/A/H/Q] > ------------------------------------------------------------------------
+ EVIDENCE #10  [Physical]  Napkin in the Dustbin   ** NEW **
+------------------------------------------------------------------------
+  In the study dustbin there is a paper napkin with white powder inside
+  it. It is printed "Sharma Jewellers - Happy Diwali". Only the shop's
+  sweet boxes come with these napkins, and the shop sent one box to the
+  haveli tonight.
+
+  Case progress [#########-----------] 7/15 leads (46.7%)   Steps: 9
+
+  Leads from here:
+    This trail ends here: this is a final finding with no further leads.
+    Use [B] to go back and try another lead.
+
+  Command [L/R/B/N/T/A/H/Q] > 
+  You return to evidence #5: The Milk Pan
+
+  Case progress [#########-----------] 7/15 leads (46.7%)   Steps: 10
+
+  Leads from here:
+    [L] #10 Napkin in the Dustbin (Physical) - explored
+    [R] #11 Kitchen Camera (Surveillance) - UNEXPLORED
+
+  Command [L/R/B/N/T/A/H/Q] > ------------------------------------------------------------------------
+ EVIDENCE #11  [Surveillance]  Kitchen Camera   ** NEW **
+------------------------------------------------------------------------
+  The kitchen camera shows Rashi boiling the milk, pouring it, and
+  walking straight to the study at 9:00 PM. She does not stop and does
+  not add anything. She comes out after one minute. The milk was clean
+  when it left her hands. Rashi is not the poisoner.
+
+  Case progress [##########----------] 8/15 leads (53.3%)   Steps: 11
+
+  Leads from here:
+    This trail ends here: this is a final finding with no further leads.
+    Use [B] to go back and try another lead.
+
+  Command [L/R/B/N/T/A/H/Q] > 
+  You return to evidence #5: The Milk Pan
+
+  Case progress [##########----------] 8/15 leads (53.3%)   Steps: 12
+
+  Leads from here:
+    [L] #10 Napkin in the Dustbin (Physical) - explored
+    [R] #11 Kitchen Camera (Surveillance) - explored
+
+  Command [L/R/B/N/T/A/H/Q] > 
+  You return to evidence #2: The Milk Glass
+
+  Case progress [##########----------] 8/15 leads (53.3%)   Steps: 13
+
+  Leads from here:
+    [L] #4 Lab Report (Forensic) - explored
+    [R] #5 The Milk Pan (Physical) - explored
+
+  Command [L/R/B/N/T/A/H/Q] > 
+  You return to evidence #1: Crime Scene: The Study
+
+  Case progress [##########----------] 8/15 leads (53.3%)   Steps: 14
+
+  Leads from here:
+    [L] #2 The Milk Glass (Physical) - explored
+    [R] #3 What the Family Says (Testimony) - UNEXPLORED
+
+  Command [L/R/B/N/T/A/H/Q] > ------------------------------------------------------------------------
+ EVIDENCE #3  [Testimony]  What the Family Says   ** NEW **
+------------------------------------------------------------------------
+  Everyone says they were busy with the Diwali puja and sweets. But
+  their stories do not match in small ways. Geeta and Advaith both
+  quarrelled with Adithya this week. Neeti was the first to reach the
+  study. Rashi looks scared, and the gate register may be hiding a
+  secret.
+
+  Case progress [############--------] 9/15 leads (60.0%)   Steps: 15
+
+  Leads from here:
+    [L] #6 Rashi's Statement (Testimony) - UNEXPLORED
+    [R] #7 Gate Register (Digital) - UNEXPLORED
+
+  Command [L/R/B/N/T/A/H/Q] > ------------------------------------------------------------------------
+ EVIDENCE #6  [Testimony]  Rashi's Statement   ** NEW **
+------------------------------------------------------------------------
+  Rashi says she took the milk to the study at 9:00 PM and left it on
+  the desk. Earlier, at 8:30 PM, he heard Adithya shout on the phone: "I
+  will call the police about the shop accounts tomorrow morning!" Then
+  Rashi stopped talking and looked at the floor.
+
+  Case progress [#############-------] 10/15 leads (66.7%)   Steps: 16
+
+  Leads from here:
+    [L] #12 Neeti's Video Call (Digital) - UNEXPLORED
+    [R] #13 Corridor Camera (Surveillance) - UNEXPLORED
+
+  Command [L/R/B/N/T/A/H/Q] > ------------------------------------------------------------------------
+ EVIDENCE #12  [Digital]  Neeti's Video Call   ** NEW **
+------------------------------------------------------------------------
+  Neeti was on a video call with three college friends from 8:30 PM to
+  10:10 PM. They all confirm it, and the call record proves it. She only
+  walked into the study at 10:30 PM and found her uncle. She was in
+  shock, which is why she was slow to call for help.
+
+  Case progress [##############------] 11/15 leads (73.3%)   Steps: 17
+
+  Leads from here:
+    This trail ends here: this is a final finding with no further leads.
+    Use [B] to go back and try another lead.
+
+  Command [L/R/B/N/T/A/H/Q] > 
+  You return to evidence #6: Rashi's Statement
+
+  Case progress [##############------] 11/15 leads (73.3%)   Steps: 18
+
+  Leads from here:
+    [L] #12 Neeti's Video Call (Digital) - explored
+    [R] #13 Corridor Camera (Surveillance) - UNEXPLORED
+
+  Command [L/R/B/N/T/A/H/Q] > ------------------------------------------------------------------------
+ EVIDENCE #13  [Surveillance]  Corridor Camera   ** NEW **
+------------------------------------------------------------------------
+  The corridor camera has night mode, so it works even in the power cut.
+  At 9:20 PM a man in a grey jacket enters the study with a napkin in
+  his hand. At 9:30 PM he comes out with a red book hidden under his
+  jacket. His face is turned away, but the back of the jacket says
+  "Sharma Jewellers - Staff".
+
+  Case progress [################----] 12/15 leads (80.0%)   Steps: 19
+
+  Leads from here:
+    This trail ends here: this is a final finding with no further leads.
+    Use [B] to go back and try another lead.
+
+  Command [L/R/B/N/T/A/H/Q] > 
+  You return to evidence #6: Rashi's Statement
+
+  Case progress [################----] 12/15 leads (80.0%)   Steps: 20
+
+  Leads from here:
+    [L] #12 Neeti's Video Call (Digital) - explored
+    [R] #13 Corridor Camera (Surveillance) - explored
+
+  Command [L/R/B/N/T/A/H/Q] > 
+  You return to evidence #3: What the Family Says
+
+  Case progress [################----] 12/15 leads (80.0%)   Steps: 21
+
+  Leads from here:
+    [L] #6 Rashi's Statement (Testimony) - explored
+    [R] #7 Gate Register (Digital) - UNEXPLORED
+
+  Command [L/R/B/N/T/A/H/Q] > ------------------------------------------------------------------------
+ EVIDENCE #7  [Digital]  Gate Register   ** NEW **
+------------------------------------------------------------------------
+  The gate register shows who went in and out after 8 PM. Advaith's bike
+  left at 8:00 PM for his college fest. Geeta's car left at 8:45 PM for
+  the temple. Abhinav's scooter came in at 9:05 PM "to give Diwali
+  sweets" and left at 9:40 PM. Nobody else came or went.
+
+  Case progress [#################---] 13/15 leads (86.7%)   Steps: 22
+
+  Leads from here:
+    [L] #14 Advaith's Phone (Digital) - UNEXPLORED
+    [R] #15 Temple Camera (Surveillance) - UNEXPLORED
+
+  Command [L/R/B/N/T/A/H/Q] > ------------------------------------------------------------------------
+ EVIDENCE #14  [Digital]  Advaith's Phone   ** NEW **
+------------------------------------------------------------------------
+  Advaith's phone location shows he was at his college fest, 12 km away,
+  from 8:20 PM to 11:00 PM. His friends' photos show him dancing on
+  stage at 9:30 PM. He could not have been in the study.
+
+  Case progress [##################--] 14/15 leads (93.3%)   Steps: 23
+
+  Leads from here:
+    This trail ends here: this is a final finding with no further leads.
+    Use [B] to go back and try another lead.
+
+  Command [L/R/B/N/T/A/H/Q] > 
+  You return to evidence #7: Gate Register
+
+  Case progress [##################--] 14/15 leads (93.3%)   Steps: 24
+
+  Leads from here:
+    [L] #14 Advaith's Phone (Digital) - explored
+    [R] #15 Temple Camera (Surveillance) - UNEXPLORED
+
+  Command [L/R/B/N/T/A/H/Q] > ------------------------------------------------------------------------
+ EVIDENCE #15  [Surveillance]  Temple Camera   ** NEW **
+------------------------------------------------------------------------
+  The temple camera shows Geeta doing aarti with about 200 people from
+  9:00 PM to 10:10 PM. She came home at 10:20 PM, long after the milk
+  was poisoned.
+
+  >>> Every lead has been explored. Study your notebook (N), then accuse (A). <<<
+
+  Case progress [####################] 15/15 leads (100.0%)   Steps: 25
+
+  Leads from here:
+    This trail ends here: this is a final finding with no further leads.
+    Use [B] to go back and try another lead.
+
+  Command [L/R/B/N/T/A/H/Q] > 
+  All leads explored. Whom do you accuse?
+  [1] Geeta Sharma - Wife
+      She will get the haveli and the shop. People say she and Adithya
+      had a loud fight last week.
+  [2] Rashi Yadav - Family cook
+      She has worked in the haveli for thirty years. She made the milk
+      and carried it to the study.
+  [3] Advaith Sharma - Son
+      He wants to start his own business, but his father refused to give
+      him money. They had an angry argument at dinner.
+  [4] Abhinav Malhotra - Shop manager
+      He runs Sharma Jewellers every day and knows the shop's money
+      better than anyone. He visited the haveli tonight.
+  [5] Neeti Nair - Niece
+      She is a college student who lives in the haveli. She says she
+      found the body, but she took a long time to call for help.
+  Enter the suspect number (or 0 to cancel): 
+  *** INCORRECT ACCUSATION: Geeta Sharma is innocent! ***
+  Evidence #15 (Temple Camera) clears Geeta Sharma:
+      The temple camera shows Geeta doing aarti with about 200 people
+      from 9:00 PM to 10:10 PM. She came home at 10:20 PM, long after
+      the milk was poisoned.
+  Study the notebook (N) and try again. Incorrect accusations so far: 1
+
+  Case progress [####################] 15/15 leads (100.0%)   Steps: 25
+
+  Leads from here:
+    This trail ends here: this is a final finding with no further leads.
+    Use [B] to go back and try another lead.
+
+  Command [L/R/B/N/T/A/H/Q] > 
+  All leads explored. Whom do you accuse?
+  [1] Geeta Sharma - Wife
+      She will get the haveli and the shop. People say she and Adithya
+      had a loud fight last week.
+  [2] Rashi Yadav - Family cook
+      She has worked in the haveli for thirty years. She made the milk
+      and carried it to the study.
+  [3] Advaith Sharma - Son
+      He wants to start his own business, but his father refused to give
+      him money. They had an angry argument at dinner.
+  [4] Abhinav Malhotra - Shop manager
+      He runs Sharma Jewellers every day and knows the shop's money
+      better than anyone. He visited the haveli tonight.
+  [5] Neeti Nair - Niece
+      She is a college student who lives in the haveli. She says she
+      found the body, but she took a long time to call for help.
+  Enter the suspect number (or 0 to cancel): 
+------------------------------------------------------------------------
+   CASE CLOSED - YOU SOLVED: Diwali Night at Sharma Haveli
+------------------------------------------------------------------------
+  The culprit: Abhinav Malhotra (Shop manager)
+
+  Abhinav Malhotra, the shop manager, had been stealing gold and money
+  from Sharma Jewellers for two years. Adithya found out from the red
+  account book and told Abhinav that he would call the police the next
+  morning. On Diwali night Abhinav came with a box of sweets and waited
+  for the power cut at 9:15. He slipped into the study, crushed strong
+  sleeping tablets into the milk, and took the red book. The
+  firecrackers hid every sound. All the other suspects were cleared by
+  proof: Rashi was on camera, Neeti was on a video call, Advaith was at
+  his college fest, and Geeta was at the temple.
+
+  How each suspect was dealt with:
+    [1] Geeta Sharma: cleared by evidence #15 (Temple Camera)
+    [2] Rashi Yadav: cleared by evidence #11 (Kitchen Camera)
+    [3] Advaith Sharma: cleared by evidence #14 (Advaith's Phone)
+    [4] Abhinav Malhotra: GUILTY
+    [5] Neeti Nair: cleared by evidence #12 (Neeti's Video Call)
+
+  INVESTIGATION STATISTICS
+    Total evidence nodes ........ 15
+    Explored leads .............. 15
+    Unexplored leads ............ 0
+    Lead completeness ........... 100.0%
+    Steps taken ................. 25
+    Time to solve ............... 0.0 s
+    Incorrect accusations ....... 1
+    Refused accusations ......... 1  (made before 100% explored)
+    Tree height / leaf nodes .... 3 / 8
+    Fewest possible steps ....... 25  (a depth-first walk that visits every node and stops on the last one)
+------------------------------------------------------------------------
+
+Play again? (Y/N): 
+========================================================
+   DETECTIVE MYSTERY GAME USING BINARY TREES
+   Case loaded: Diwali Night at Sharma Haveli
+========================================================
+  1) Play the mystery
+  2) Guided experiment (you play, the game records your time)
+  3) Automated lead-completeness experiment (computer detective)
+  4) Scaling experiment (same test on much bigger trees)
+  5) Binary tree analysis: traversals, counts, height, search
+  6) Full / Complete / Perfect binary tree demo
+  7) Quit
+  Choice: 
+Goodbye, detective.

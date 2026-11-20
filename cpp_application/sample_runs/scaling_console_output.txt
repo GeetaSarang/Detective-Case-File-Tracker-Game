@@ -1,0 +1,19 @@
+
+=== SCALING EXPERIMENT: bigger perfect trees, same walk, same rule ===
+ height    nodes  target  explored     steps      avg ms     ns/step  accepted%
+     10     2047     25%       512      1012      0.0355        35.1        0.0
+     10     2047     50%      1024      2036      0.0701        34.4        0.0
+     10     2047     75%      1536      3060      0.1033        33.8        0.0
+     10     2047    100%      2047      4082      0.1407        34.5      100.0
+     14    32767     25%      8192     16368      0.5653        34.5        0.0
+     14    32767     50%     16384     32752      0.9187        28.0        0.0
+     14    32767     75%     24576     49136      1.1116        22.6        0.0
+     14    32767    100%     32767     65518      1.5555        23.7      100.0
+     17   262143     25%     65536    131053      2.9596        22.6        0.0
+     17   262143     50%    131072    262125      6.0259        23.0        0.0
+     17   262143     75%    196608    393197     10.4495        26.6        0.0
+     17   262143    100%    262143    524267     13.0785        24.9      100.0
+
+  Time grows in proportion to the number of steps (about constant ns/step),
+  and the accusation is accepted only at 100% completeness.
+  Saved: ../experiments/scaling_results.csv
