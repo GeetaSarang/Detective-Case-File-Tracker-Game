@@ -1,0 +1,211 @@
+{
+  "suspects": [
+    {
+      "id": 3,
+      "name": "Advaith Sharma",
+      "role": "Son",
+      "description": "He wants to start his own business, but his father refused to give him money. They had an angry argument at dinner."
+    },
+    {
+      "id": 1,
+      "name": "Geeta Sharma",
+      "role": "Wife",
+      "description": "She will get the haveli and the shop. People say she and Adithya had a loud fight last week."
+    },
+    {
+      "id": 4,
+      "name": "Abhinav Malhotra",
+      "role": "Shop manager",
+      "description": "He runs Sharma Jewellers every day and knows the shop's money better than anyone. He visited the haveli tonight."
+    },
+    {
+      "id": 2,
+      "name": "Rashi Yadav",
+      "role": "Family cook",
+      "description": "She has worked in the haveli for thirty years. She made the milk and carried it to the study."
+    },
+    {
+      "id": 5,
+      "name": "Neeti Nair",
+      "role": "Niece",
+      "description": "She is a college student who lives in the haveli. She says she found the body, but she took a long time to call for help."
+    }
+  ],
+  "nodes": [
+    {
+      "id": 1,
+      "parent": 0,
+      "side": "ROOT",
+      "type": "Scene",
+      "title": "Crime Scene: The Study",
+      "description": "The study is dark and smells of burnt diyas. Adithya Sharma sits at his desk and does not move. A glass of milk stands next to him. The iron safe is open and the red account book is missing. Outside, firecrackers keep banging, so nobody heard anything. Where will you look first?",
+      "pointsTo": [],
+      "clears": []
+    },
+    {
+      "id": 2,
+      "parent": 1,
+      "side": "L",
+      "type": "Physical",
+      "title": "The Milk Glass",
+      "description": "The glass is half empty. At the bottom there is a thin layer of white powder, and the milk smells a little bitter. Someone put something in it. But when, and who?",
+      "pointsTo": [],
+      "clears": []
+    },
+    {
+      "id": 3,
+      "parent": 1,
+      "side": "R",
+      "type": "Testimony",
+      "title": "What the Family Says",
+      "description": "Everyone says they were busy with the Diwali puja and sweets. But their stories do not match in small ways. Geeta and Advaith both quarrelled with Adithya this week. Neeti was the first to reach the study. Rashi looks scared, and the gate register may be hiding a secret.",
+      "pointsTo": [
+        1,
+        3,
+        5
+      ],
+      "clears": []
+    },
+    {
+      "id": 4,
+      "parent": 2,
+      "side": "L",
+      "type": "Forensic",
+      "title": "Lab Report",
+      "description": "The white powder is crushed sleeping medicine. The amount was enough to stop an old man's heart. This was not an accident. Where did the tablets come from?",
+      "pointsTo": [],
+      "clears": []
+    },
+    {
+      "id": 5,
+      "parent": 2,
+      "side": "R",
+      "type": "Physical",
+      "title": "The Milk Pan",
+      "description": "The milk left in the kitchen pan is clean. So the poison was added after the milk left the kitchen. Someone touched that glass on the way, or inside the study.",
+      "pointsTo": [],
+      "clears": []
+    },
+    {
+      "id": 6,
+      "parent": 3,
+      "side": "L",
+      "type": "Testimony",
+      "title": "Rashi's Statement",
+      "description": "Rashi says she took the milk to the study at 9:00 PM and left it on the desk. Earlier, at 8:30 PM, he heard Adithya shout on the phone: \"I will call the police about the shop accounts tomorrow morning!\" Then Rashi stopped talking and looked at the floor.",
+      "pointsTo": [
+        2
+      ],
+      "clears": []
+    },
+    {
+      "id": 7,
+      "parent": 3,
+      "side": "R",
+      "type": "Digital",
+      "title": "Gate Register",
+      "description": "The gate register shows who went in and out after 8 PM. Advaith's bike left at 8:00 PM for his college fest. Geeta's car left at 8:45 PM for the temple. Abhinav's scooter came in at 9:05 PM \"to give Diwali sweets\" and left at 9:40 PM. Nobody else came or went.",
+      "pointsTo": [],
+      "clears": []
+    },
+    {
+      "id": 8,
+      "parent": 4,
+      "side": "L",
+      "type": "Document",
+      "title": "Medicine Cabinet",
+      "description": "Adithya's own sleeping tablets are all still in the strip. The cabinet was locked and the key was in his pocket. The poison did not come from this house. Someone brought the tablets from outside.",
+      "pointsTo": [],
+      "clears": []
+    },
+    {
+      "id": 9,
+      "parent": 4,
+      "side": "R",
+      "type": "Document",
+      "title": "Medical Shop Bill",
+      "description": "A small medical shop near the market says a man bought ten strong sleeping tablets last Monday without a doctor's slip. The shop owner remembers his gold watch. It had the words \"10 Years of Service - Sharma Jewellers\" on it. He paid in cash.",
+      "pointsTo": [
+        4
+      ],
+      "clears": []
+    },
+    {
+      "id": 10,
+      "parent": 5,
+      "side": "L",
+      "type": "Physical",
+      "title": "Napkin in the Dustbin",
+      "description": "In the study dustbin there is a paper napkin with white powder inside it. It is printed \"Sharma Jewellers - Happy Diwali\". Only the shop's sweet boxes come with these napkins, and the shop sent one box to the haveli tonight.",
+      "pointsTo": [
+        4
+      ],
+      "clears": []
+    },
+    {
+      "id": 11,
+      "parent": 5,
+      "side": "R",
+      "type": "Surveillance",
+      "title": "Kitchen Camera",
+      "description": "The kitchen camera shows Rashi boiling the milk, pouring it, and walking straight to the study at 9:00 PM. She does not stop and does not add anything. She comes out after one minute. The milk was clean when it left her hands. Rashi is not the poisoner.",
+      "pointsTo": [],
+      "clears": [
+        2
+      ]
+    },
+    {
+      "id": 12,
+      "parent": 6,
+      "side": "L",
+      "type": "Digital",
+      "title": "Neeti's Video Call",
+      "description": "Neeti was on a video call with three college friends from 8:30 PM to 10:10 PM. They all confirm it, and the call record proves it. She only walked into the study at 10:30 PM and found her uncle. She was in shock, which is why she was slow to call for help.",
+      "pointsTo": [],
+      "clears": [
+        5
+      ]
+    },
+    {
+      "id": 13,
+      "parent": 6,
+      "side": "R",
+      "type": "Surveillance",
+      "title": "Corridor Camera",
+      "description": "The corridor camera has night mode, so it works even in the power cut. At 9:20 PM a man in a grey jacket enters the study with a napkin in his hand. At 9:30 PM he comes out with a red book hidden under his jacket. His face is turned away, but the back of the jacket says \"Sharma Jewellers - Staff\".",
+      "pointsTo": [
+        4
+      ],
+      "clears": []
+    },
+    {
+      "id": 14,
+      "parent": 7,
+      "side": "L",
+      "type": "Digital",
+      "title": "Advaith's Phone",
+      "description": "Advaith's phone location shows he was at his college fest, 12 km away, from 8:20 PM to 11:00 PM. His friends' photos show him dancing on stage at 9:30 PM. He could not have been in the study.",
+      "pointsTo": [],
+      "clears": [
+        3
+      ]
+    },
+    {
+      "id": 15,
+      "parent": 7,
+      "side": "R",
+      "type": "Surveillance",
+      "title": "Temple Camera",
+      "description": "The temple camera shows Geeta doing aarti with about 200 people from 9:00 PM to 10:10 PM. She came home at 10:20 PM, long after the milk was poisoned.",
+      "pointsTo": [],
+      "clears": [
+        1
+      ]
+    }
+  ],
+  "title": "Diwali Night at Sharma Haveli",
+  "victim": "Adithya Sharma",
+  "intro": "It is Diwali night in Jaipur. Sharma Haveli is full of lights, sweets and loud firecrackers. At 9:15 PM the power goes off for ten long minutes. At 10:30 PM the family finds Adithya Sharma, 62, the owner of Sharma Jewellers, sitting very still at his study desk. A glass of milk is next to him. His iron safe is open and his red account book is gone. Nobody screamed. Nobody saw anything. Five people were inside the haveli tonight, and one of them is lying. The police will not make an arrest until you have followed every lead in the file. The night is almost over. Who did it?",
+  "solution": "Abhinav Malhotra, the shop manager, had been stealing gold and money from Sharma Jewellers for two years. Adithya found out from the red account book and told Abhinav that he would call the police the next morning. On Diwali night Abhinav came with a box of sweets and waited for the power cut at 9:15. He slipped into the study, crushed strong sleeping tablets into the milk, and took the red book. The firecrackers hid every sound. All the other suspects were cleared by proof: Rashi was on camera, Neeti was on a video call, Advaith was at his college fest, and Geeta was at the temple.",
+  "culpritId": 4
+}
